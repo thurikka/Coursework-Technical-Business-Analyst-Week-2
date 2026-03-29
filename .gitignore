@@ -1,0 +1,20 @@
+# Week 2 coursework ignore rules
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Office and design temp files
+~$*
+*.tmp
+*.bak
+
+# Export artifacts
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Tool settings
+.vscode/
+.idea/
