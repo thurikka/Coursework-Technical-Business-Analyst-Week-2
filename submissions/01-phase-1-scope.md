@@ -2,8 +2,8 @@
 
 ## In scope
 
-- **Identity verification (secure login and account matching)**  
-  *Justification:* Required for compliance and secure access to sensitive financial data. Forms the foundation for all other portal functionality.
+- **Identity verification (secure login, document upload, and manual verification support)**
+  *Justification:* Replaces fragmented email-based document submission with a structured intake flow in the portal. This reduces operational inefficiency, improves traceability, and maintains compliance by keeping verification agent-led.
 
 - **Account summary and eligible actions (balance, breakdown, status, next steps)**  
   *Justification:* Directly addresses the highest-priority customer need of understanding what is owed and what to do next. Reduces repeated customer contact and agent workload.
@@ -20,8 +20,8 @@
 - **Automated follow-up scheduling for PTP and missed actions**  
   *Justification:* Directly addresses revenue leakage caused by missed follow-ups and reduces reliance on manual tracking.
 
-- **Audit logging of customer actions and system decisions**  
-  *Justification:* Required for compliance and financial governance, and enables validation of performance and ROI.
+- **Audit logging and structured event tracking across customer journeys and financial state changes**
+  *Justification:* Captures key customer actions (e.g. login, account view, PTP creation) and financial state changes (e.g. payment received, delinquency updates). This ensures end-to-end traceability for compliance, operational oversight, and performance measurement. It supports a consistent view of activity across fragmented systems without duplicating existing data sources or creating a new system of record.
 
 - **Lightweight unified agent view (account summary, PTP status, activity history)**  
   *Justification:* Reduces time spent reconciling fragmented systems, improving agent efficiency without requiring full system replacement.
@@ -73,9 +73,9 @@
 ## Dependencies and constraints
 
 - Integration with legacy collections systems for account data  
-- Agreement on PTP eligibility rules (e.g. blocked accounts, frozen funds)  
+- Agreement on PTP eligibility rules (e.g. blocked accounts, frozen funds, accounts heavily overdrawn)  
 - Compliance approval for identity verification, audit logging, and messaging  
-- Alignment with agent workflows for routed and follow-up cases  
+- Alignment with agent workflows for routed cases  
 - Data quality limitations in existing systems  
 - Clear ownership between portal and existing tools to avoid duplication  
 
