@@ -2,89 +2,80 @@
 
 ## In scope
 
-- **Identity verification (secure login, document upload, and manual verification support)**
-  *Justification:* Replaces fragmented email-based document submission with a structured intake flow in the portal. This reduces operational inefficiency, improves traceability, and maintains compliance by keeping verification agent-led.
+- **Identity verification (secure login, document upload, and manual verification support)**  
+  *Justification:* Provides a controlled and auditable replacement for email-based document submission, improving traceability and compliance while keeping verification safely agent-led.
 
-- **Account summary and eligible actions (balance, breakdown, status, next steps)**  
-  *Justification:* Directly addresses the highest-priority customer need of understanding what is owed and what to do next. Reduces repeated customer contact and agent workload.
+- **Customer account view & self-service actions (account summary, repayment options, Promise-to-Pay capture with basic eligibility rules)**  
+  *Justification:* Addresses the core customer need to understand their balance and take action without contacting support, reducing repeat contact and improving recovery efficiency while keeping complex decisions rules-based.
 
-- **Promise-to-Pay (PTP) capture and tracking with basic eligibility rules**  
-  *Justification:* Improves follow-up consistency and reduces missed recovery opportunities. Replaces unreliable manual tracking with structured commitments.
+- **Automated follow-up management (PTP tracking and missed action scheduling)**  
+  *Justification:* Reduces missed recovery opportunities caused by manual tracking and improves consistency of collections follow-ups, directly addressing revenue leakage.
 
-- **Eligible repayment options display (selection only, no payment execution)**  
-  *Justification:* Enables customer self-service while avoiding the complexity and risk of handling payments in Phase 1.
+- **Rules-based routing and escalation to agents (complex, high-risk, or ineligible cases)**  
+  *Justification:* Ensures compliance and operational safety by keeping complex and sensitive cases human-led while allowing automation of straightforward journeys.
 
-- **Rules-based routing to agents for complex or ineligible cases**  
-  *Justification:* Ensures high-risk and complex cases remain human-led, maintaining compliance and operational trust while allowing safe automation of straightforward cases.
+- **Audit logging and structured event tracking (customer actions and financial state changes)**  
+  *Justification:* Enables end-to-end traceability across fragmented systems, supporting compliance, operational oversight, and performance measurement without replacing legacy systems.
 
-- **Automated follow-up scheduling for PTP and missed actions**  
-  *Justification:* Directly addresses revenue leakage caused by missed follow-ups and reduces reliance on manual tracking.
-
-- **Audit logging and structured event tracking across customer journeys and financial state changes**
-  *Justification:* Captures key customer actions (e.g. login, account view, PTP creation) and financial state changes (e.g. payment received, delinquency updates). This ensures end-to-end traceability for compliance, operational oversight, and performance measurement. It supports a consistent view of activity across fragmented systems without duplicating existing data sources or creating a new system of record.
-
-- **Lightweight unified agent view (account summary, PTP status, activity history)**  
-  *Justification:* Reduces time spent reconciling fragmented systems, improving agent efficiency without requiring full system replacement.
-
-- **Basic portal outcome reporting (self-service usage, PTP rates, follow-up completion)**  
-  *Justification:* Provides visibility into whether the portal is reducing workload and improving recovery performance.
+- **Unified agent view and basic outcome reporting (account status, PTP activity, self-service usage)**  
+  *Justification:* Reduces time spent reconciling multiple systems and provides visibility into whether self-service is reducing workload and improving recovery outcomes.
 
 ---
 
 ## Out of scope
 
 - **Hardship assessment or vulnerability detection automation**  
-  *Justification:* Requires sensitive human judgment and carries high compliance risk. Better handled through agent review.
+  *Justification:* Requires sensitive human judgment and carries high compliance and reputational risk, making it unsuitable for early automation.
 
-- **Abusive behaviour detection or escalation automation**  
-  *Justification:* Difficult to reliably automate and risks incorrect handling of sensitive situations.
+- **Abusive behaviour detection and automated escalation**  
+  *Justification:* High risk of false positives and incorrect handling of sensitive customer situations; requires human oversight.
 
 - **Legal escalation workflows and enforcement actions**  
-  *Justification:* High-risk, low-volume processes that would significantly increase complexity without contributing to Phase 1 value.
+  *Justification:* Low-volume, high-risk processes that add significant complexity without contributing to Phase 1 recovery efficiency.
+
+- **Payment processing or funds transfer functionality**  
+  *Justification:* Introduces regulatory and technical complexity; Phase 1 focuses on commitments (PTP) rather than financial transactions.
 
 - **Full replacement of the legacy collections platform**  
-  *Justification:* Not feasible within Phase 1. A layered approach reduces delivery risk and enables incremental improvement.
+  *Justification:* Not feasible within Phase 1; a layered approach is required to reduce delivery and integration risk.
 
 - **AI-driven prioritisation or predictive decisioning**  
-  *Justification:* Requires high-quality data and explainability. Not necessary to achieve early value and may reduce stakeholder confidence.
+  *Justification:* Requires mature data foundations and explainability; not necessary to achieve early operational value.
 
-- **Payment processing or funds transfer within the portal**  
-  *Justification:* Introduces regulatory and technical complexity. Phase 1 focuses on commitment capture rather than transaction execution.
-
-- **Bespoke repayment negotiation flows**  
-  *Justification:* Complex and variable, requiring human judgment. Not suitable for initial rules-based automation.
+- **Bespoke repayment negotiation workflows**  
+  *Justification:* Highly variable and dependent on human judgment, making it unsuitable for rules-based automation in Phase 1.
 
 - **Advanced personalisation or recommendation engines**  
-  *Justification:* Lower immediate value compared to core functionality and adds unnecessary complexity for Phase 1.
+  *Justification:* Adds complexity without delivering proportional value in early release and increases delivery risk.
 
 ---
 
 ## Assumptions
 
-- Legacy systems can provide sufficient data for account summary and status display  
+- Legacy systems can provide reliable account and status data for portal display  
 - Eligibility rules for PTP and routing can be agreed without full policy redesign  
+- Customers can be reliably authenticated within the portal journey  
 - Operations teams will continue handling complex and high-risk cases  
-- A pilot or phased rollout approach is acceptable  
-- Customers can be reliably identified and authenticated  
-- Compliance requirements can be met with audit logging and limited financial action scope  
+- A phased or pilot rollout approach is acceptable  
+- Compliance requirements can be met with audit logging and restricted financial actions  
 
 ---
 
 ## Dependencies and constraints
 
-- Integration with legacy collections systems for account data  
-- Agreement on PTP eligibility rules (e.g. blocked accounts, frozen funds, accounts heavily overdrawn)  
-- Compliance approval for identity verification, audit logging, and messaging  
-- Alignment with agent workflows for routed cases  
-- Data quality limitations in existing systems  
-- Clear ownership between portal and existing tools to avoid duplication  
+- Integration with legacy collections and account systems  
+- Agreement on PTP eligibility rules (e.g. blocked accounts, high-risk balances, frozen funds)  
+- Compliance approval for identity verification, audit logging, and messaging flows  
+- Alignment of agent workflows for routed cases  
+- Data quality limitations across existing systems  
+- Clear ownership boundaries between portal and legacy tools to avoid duplication  
 
 ---
 
 ## Why this scope is credible
 
-This scope directly targets the highest-impact issues identified in discovery: reducing repeated customer contact, improving follow-up reliability, and reducing agent time spent reconciling fragmented systems. By focusing on account clarity and structured Promise-to-Pay capture, it addresses both customer friction and key drivers of revenue leakage.
+This Phase 1 scope directly targets the highest-impact issues identified in discovery, particularly fragmented systems, missed follow-ups, and high volumes of repeat customer contact. By focusing on a unified account view, structured Promise-to-Pay capture, and automated follow-up tracking, it addresses both customer friction and key drivers of revenue leakage in a controlled and measurable way.
 
-The scope is deliberately constrained to a focused, high-value set of capabilities. It avoids complex, high-risk areas such as legal workflows and hardship assessment, while introducing a self-service layer that complements rather than replaces existing systems. This supports a phased delivery approach, allowing value to be delivered early while reducing integration and adoption risk.
+The scope is intentionally constrained to a set of high-value, low-risk capabilities that can be delivered without replacing core legacy systems. It introduces a structured self-service layer while preserving human oversight for complex and high-risk cases, ensuring operational and compliance stability.
 
-By maintaining clear handoffs to agents for complex or high-risk cases and limiting automation to rules-based scenarios, the solution balances efficiency gains with operational control and compliance confidence. This ensures the system can be adopted incrementally, with performance and impact measured and refined before expanding scope in later phases.
+This phased approach balances delivery feasibility with measurable early value, enabling improvements in recovery performance, operational efficiency, and customer experience.
