@@ -1,0 +1,232 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Blocks),Inward issue link (Blocks),Inward issue link (Blocks),Inward issue link (Blocks),Outward issue link (Blocks),Outward issue link (Blocks),Outward issue link (Blocks),Outward issue link (Blocks),Outward issue link (Blocks),Outward issue link (Blocks),Outward issue link (Blocks),Custom field (Development),Custom field (Goals),Custom field (Issue color),Custom field (Rank),Custom field (Start date),Custom field (Team),Custom field (Vulnerability),Parent,Parent key,Parent summary,Status Category,Status Category Changed
+Customer Login,SMAR-6,10070,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,Highest,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:04 AM,16/Apr/26 4:26 PM,16/Apr/26 4:16 PM,,,0,"*User story:*
+As a customer, I want to securely log into the portal so that I can access my account
+
+*Business value:* Enables self-service access
+
+*Acceptance criteria:*
+
+* Credentials accepted
+* Authentication succeeds
+* Invalid login shows error
+
+*Dependencies:* None ",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,,,,,SMAR-7,SMAR-8,SMAR-9,SMAR-10,SMAR-11,SMAR-12,SMAR-13,,,,0|i0006f:,,,,10065,SMAR-1,Access & Verification,To Do,16/Apr/26 11:04 AM
+Customer Identity Verification,SMAR-7,10071,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,Highest,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:05 AM,16/Apr/26 4:26 PM,16/Apr/26 4:20 PM,,,0,"*User story:*
+As a customer, I want to verify my identity so that I can securely access account details
+
+*Business value:* Security + compliance
+
+*Acceptance criteria:*
+
+* Customer submits identifiers
+* System validates correctly
+* Access granted only if matched
+
+*Dependencies:*
+
+* Customer Login",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-6,,,,SMAR-8,SMAR-9,SMAR-10,SMAR-11,SMAR-12,SMAR-13,,,,,0|i0006n:,,,,10065,SMAR-1,Access & Verification,To Do,16/Apr/26 11:05 AM
+Account Access Recovery,SMAR-8,10072,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,Medium,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:07 AM,16/Apr/26 4:38 PM,16/Apr/26 4:26 PM,,,0,"*User story:*
+As a customer, I want to recover access if I’m locked out so that I can continue my journey
+
+*Business value:* Prevents drop-off
+
+*Acceptance criteria:*
+
+* Recovery flow available
+* Identity re-check required
+* Access restored
+
+*Dependencies:*
+
+* Customer Login 
+* Customer Identity Verification ",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-6,SMAR-7,,,,,,,,,,,,,0|i0009l:,,,,10065,SMAR-1,Access & Verification,To Do,16/Apr/26 11:07 AM
+View Outstanding Balance,SMAR-9,10073,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,High,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:08 AM,16/Apr/26 4:37 PM,16/Apr/26 4:26 PM,,,0,"*User story:*
+As a customer, I want to see my balance so that I understand what I owe
+
+*Business value:* Reduces inbound contact
+
+*Acceptance criteria:*
+
+* Balance displayed
+* Matches backend data
+* Loads successfully
+
+*Dependencies:*
+
+* Customer Login
+* Customer Identity Verification",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-6,SMAR-7,,,SMAR-16,SMAR-17,SMAR-20,,,,,,,,0|i0006p:,,,,10066,SMAR-2,Account Visibility,To Do,16/Apr/26 11:08 AM
+View Account History,SMAR-10,10074,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,Medium,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:09 AM,16/Apr/26 4:37 PM,16/Apr/26 12:54 PM,,,0,"*User story:*
+As a customer, I want to see past activity so that I don’t repeat information
+
+*Business value:* Reduces duplication
+
+*Acceptance criteria:*
+
+* Shows past interactions
+* Includes timestamps
+* Accurate data display
+
+*Dependencies:*
+
+* Customer Login 
+* Customer Identity Verification ",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-7,SMAR-6,,,SMAR-17,SMAR-16,SMAR-20,,,,,,,,0|i0006r:,,,,10066,SMAR-2,Account Visibility,To Do,16/Apr/26 11:09 AM
+View Next Recommended Action,SMAR-11,10075,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,Medium,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:10 AM,16/Apr/26 4:38 PM,16/Apr/26 12:54 PM,,,0,"*User story:*
+As a customer, I want to know what to do next so that I can act without contacting support
+
+*Business value:* Improves self-service completion
+
+*Acceptance criteria:*
+
+* Next action shown
+* Based on account status
+* Updates when status changes
+
+*Dependencies:*
+
+* Customer Login 
+* Customer Identity Verification ",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-7,SMAR-6,,,,,,,,,,,,,0|i0006t:,,,,10066,SMAR-2,Account Visibility,To Do,16/Apr/26 11:10 AM
+Set Promise-to-Pay,SMAR-12,10076,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,High,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:12 AM,16/Apr/26 4:38 PM,16/Apr/26 4:26 PM,,,0,"*User story:*
+As a customer, I want to commit to a payment date so that I can manage my debt
+
+*Business value:* Improves recovery rates
+
+*Acceptance criteria:*
+
+* Date selection available
+* Commitment stored
+* Confirmation shown
+
+*Dependencies:*
+
+* Customer Login 
+* Customer Identity Verification ",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-6,SMAR-7,,,SMAR-14,SMAR-15,SMAR-19,,,,,,,,0|i0006u:,,,,10067,SMAR-3,Promise-to-Pay / Payment Plan,To Do,16/Apr/26 11:12 AM
+Select Payment Plan,SMAR-13,10077,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,High,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:14 AM,16/Apr/26 4:38 PM,16/Apr/26 4:21 PM,,,0,"*User story:*
+As a customer, I want to select a payment plan so that I can repay over time
+
+*Business value:* Increases recoveries
+
+*Acceptance criteria:*
+
+* Plan options shown
+* Plan validated
+* Plan saved
+
+*Dependencies:*
+
+* Customer Login 
+* Customer Identity Verification ",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-7,SMAR-6,,,SMAR-14,SMAR-15,SMAR-19,,,,,,,,0|i0006u:i,,,,10067,SMAR-3,Promise-to-Pay / Payment Plan,To Do,16/Apr/26 11:14 AM
+Confirmation of Commitment,SMAR-14,10078,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,Low,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:15 AM,17/Apr/26 7:44 AM,16/Apr/26 4:26 PM,,,0,"*User story:*
+As a customer, I want confirmation of my agreement so that I know it’s recorded
+
+*Business value:* Reduces disputes
+
+*Acceptance criteria:*
+
+* Confirmation displayed
+* Details summarised
+* Stored in system
+
+*Dependencies:*
+
+* Set Promise-to-Pay 
+
+OR
+
+* Set Up Payment Plan",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-13,SMAR-12,,,,,,,,,,,,,0|i0008j:,,,,10067,SMAR-3,Promise-to-Pay / Payment Plan,To Do,16/Apr/26 11:15 AM
+Automated Follow-up Scheduling,SMAR-15,10079,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,High,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:16 AM,16/Apr/26 4:27 PM,16/Apr/26 4:26 PM,,,0,"*ser story:*
+As the system, I want to schedule follow-ups so that commitments are not missed
+
+*Business value:* Improves consistency
+
+*Acceptance criteria:*
+
+* Follow-up created automatically
+* Date based on rules
+* Visible in system
+
+*Dependencies:*
+
+* Set Promise-to-Pay 
+
+OR
+
+* Set Up Payment Plan",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-13,SMAR-12,,,,,,,,,,,,,0|i0008f:,,,,10067,SMAR-3,Promise-to-Pay / Payment Plan,To Do,16/Apr/26 11:16 AM
+Route Complex Cases to Agent,SMAR-16,10080,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,High,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:17 AM,16/Apr/26 4:27 PM,16/Apr/26 4:27 PM,,,0,"*User story:*
+As the system, I want to route complex cases so that agents handle exceptions
+
+*Business value:* Prevents failed self-service
+
+*Acceptance criteria:*
+
+* Rules identify complex cases
+* Case assigned to agent
+* Status updated
+
+*Dependencies:*
+
+* View Outstanding Balance
+* View Account History",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-10,SMAR-9,,,SMAR-17,SMAR-18,,,,,,,,,0|i0008n:,,,,10068,SMAR-4,Routing & Exception Handling,To Do,16/Apr/26 11:17 AM
+Provide Context to Agent,SMAR-17,10081,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,Medium,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:18 AM,16/Apr/26 4:38 PM,16/Apr/26 1:00 PM,,,0,"*User story:*
+As an agent, I want full context on escalated cases so that I don’t repeat work
+
+*Business value:* Reduces admin effort
+
+*Acceptance criteria:*
+
+* Customer history visible
+* Account status visible
+* Previous actions shown
+
+*Dependencies:*
+
+* Route Complex Cases to Agent 
+* Log Customer Actions 
+* View Account History 
+* View Outstanding Balance",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-10,SMAR-16,SMAR-9,SMAR-19,,,,,,,,,,,0|i00090:,,,,10068,SMAR-4,Routing & Exception Handling,To Do,16/Apr/26 11:18 AM
+Inform Customer of Escalation,SMAR-18,10082,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,Lowest,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:19 AM,17/Apr/26 7:44 AM,16/Apr/26 4:34 PM,,,0,"*User story:*
+As a customer, I want to know when my case is escalated so that I understand next steps
+
+*Business value:* Reduces confusion
+
+*Acceptance criteria:*
+
+* Notification sent
+* Reason explained
+* Next steps shown
+
+*Dependencies:*
+
+* Route Complex Cases to Agent",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-16,,,,,,,,,,,,,,0|i00099:,,,,10068,SMAR-4,Routing & Exception Handling,To Do,16/Apr/26 11:19 AM
+Log Customer Actions,SMAR-19,10083,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,High,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:20 AM,16/Apr/26 4:37 PM,16/Apr/26 4:29 PM,,,0,"*User story:*
+As the system, I want to log all customer actions so that activity is traceable
+
+*Business value:* Enables audit + reporting
+
+*Acceptance criteria:*
+
+* Actions recorded
+* Timestamp stored
+* Retrievable data
+
+*Dependencies:*
+
+* Set Promise-to-Pay 
+* Select Payment Plan",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-12,SMAR-13,,,SMAR-20,SMAR-17,,,,,,,,,0|i0006v:,,,,10069,SMAR-5,Reporting & Audit Trail,To Do,16/Apr/26 11:20 AM
+Reporting Dashboard,SMAR-20,10084,Story,To Do,SMAR,Smart Recovery Portal,software,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,Medium,,,,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,16/Apr/26 11:21 AM,16/Apr/26 4:29 PM,16/Apr/26 4:27 PM,,,0,"*User story:*
+As a manager, I want to see workload and follow-up performance so that I can manage operations
+
+*Business value:* Improves visibility
+
+*Acceptance criteria:*
+
+* Shows follow-ups completed
+* Shows workload
+* Shows escalations
+
+*Dependencies:*
+
+* Log Customer Actions
+* View Outstanding Balance 
+* View Account History",,Thurikka Jeevendra,712020:cb085f7f-429a-44b6-89c2-e3e48c569a97,,,,,,,,,SMAR-19,SMAR-10,SMAR-9,,,,,,,,,,,,0|i0009j:,,,,10069,SMAR-5,Reporting & Audit Trail,To Do,16/Apr/26 11:21 AM
+
+
